@@ -1,0 +1,18 @@
+=====================================================================================
+# library
+tensorflow (1.1.0)
+scipy (0.19.0)
+scikit-learn (0.18.1)
+python-dateutil (2.6.0)
+numpy (1.12.1)
+networkx (1.11)
+Keras (2.0.5)
+
+# About folder -- PPMI-preprocessing
+It contains a matlab code for preprocessing orginial adjacency matrix.
+
+# running command
+python main_AIDW.py --input_edgelist input/citeseer-edgelist.txt --input_ppmi input/citeseer-PPMI-4.mat --input_adj input/citeseer-undirected.mat --walk_length 80 --num_walks 10 --window_size 10 --batch_size 50 --K 5 --hidden_layers 1 --hidden_neurons 128 --rep 'output/citeseer-rep.mat' --resultTxt 'results/AIDW-citeseer.txt'
+
+# Some illustrations about the report results
+We test the embedding vectors in different iterations and report the best results in the paper instead of stopping the training process automatically. We also try to select the appropriate value of parameter c in LIBLINEAR toolkit when performing multi-class classification. 
