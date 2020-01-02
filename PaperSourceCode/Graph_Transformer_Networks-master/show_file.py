@@ -11,7 +11,7 @@
 import pickle
 import numpy as np
 
-f = open('/home/guozhenhao/Learn/DeepLearning/PaperSourceCode/Graph_Transformer_Networks-master/data/ACM/edges.pkl',
+f = open('/home/guozhenhao/Learn/DeepLearning/PaperSourceCode/Graph_Transformer_Networks-master/data/ACM/node_features.pkl',
          'rb')
 data = pickle.load(f, encoding='utf-8')
 array = np.array(list(data))
